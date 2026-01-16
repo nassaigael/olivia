@@ -61,7 +61,7 @@ a {
     --one-background: #F2F3F5;
     --card-background: #FFF;
     --card-text: #02050A;
-    --card-sub-text: #545454;
+    --card-sub-text: #d8d0d0;
     --button-color-hover: #02050A;
     --circle-img-border: #FFF;
     --circle-img-filter: brightness(0) saturate(100%) invert(34%) sepia(0%) saturate(2216%) hue-rotate(304deg) brightness(90%) contrast(88%);
@@ -918,6 +918,7 @@ section#card_main {
 }
 
 .olivia_bio {
+    display: none;
     position: relative;
     border-radius: 240px 40px 40px 40px;
     border: 2px solid var(--circle-img-border);
@@ -1020,36 +1021,12 @@ section#card_main {
     padding-bottom: 40px;
 }
 
-.circular_text_main {
-    display: flex;
-    justify-content: end;
-}
-
-.circular_text {
-    animation: rotating 6s infinite linear;
-    border: 1px solid var(--circle-img-border);
-    border-radius: 100%;
-    padding: 8px;
-    filter: var(--circle-img-filter);
-}
 
 .button_circle_group {
     display: flex;
     justify-content: space-between;
 }
 
-.down_arrow_main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.down_arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    filter: var(--nav-menu-icon);
-}
 
 @keyframes rotating {
     0% {
@@ -1092,6 +1069,8 @@ button:hover {
     position: relative;
     transform: translateX(-22px);
     overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.751), rgba(0, 0, 0, 0.501)), url('../images/autre.png');
+    background-size: cover;
 }
 
 .tabcontent {
